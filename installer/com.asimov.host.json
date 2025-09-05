@@ -1,0 +1,9 @@
+{
+  "name": "com.asimov.host",
+  "description": "ASIMOV Native Host for Chrome Extension",
+  "path": "asimov_host.py",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://dkajcahjlmamjokhoaijiebgpgplljkh/"
+  ]
+}

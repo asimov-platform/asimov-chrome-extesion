@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "ASIMOV SNAPSHOT",
+  "version": "1.0.0",
+  "description": "One-click snapshot capture with Asimov CLI via Native Messaging",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting",
+    "notifications",
+    "nativeMessaging",
+    "tabs"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "host_permissions": [
+    "https://twitter.com/*",
+    "https://x.com/*",
+    "https://*.asimov.ai/*",
+    "https://57b86664bccc.ngrok-free.app/*",
+    "https://readwise.io/*"
+  ],
+  "action": {
+    "default_title": "ASIMOV SNAPSHOT - Capture this page",
+    "default_icon": "logo.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
